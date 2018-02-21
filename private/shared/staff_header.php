@@ -6,14 +6,14 @@
 
 <html lang="en">
   <head>
-    <title>GBI - <?php echo h($page_title); ?></title>
+    <title>Research Project - <?php echo h($page_title); ?></title>
     <meta charset="utf-8">
-    <link rel="stylesheet" media="all" href="<?php echo url_for('/stylesheets/staff.css'); ?>" />
+    <link rel="stylesheet" media="all" href="<?php echo url_for('/css/staff.css'); ?>" />
   </head>
 
   <body>
     <header>
-      <h1>GBI Staff Area</h1>
+      <h1>Research Project Create User Staff Area</h1>
     </header>
 
     <navigation>

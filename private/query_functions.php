@@ -400,7 +400,7 @@
         $errors[] = "Password and confirm password must match.";
       }
     }
-
+    
     return $errors;
   }
 
