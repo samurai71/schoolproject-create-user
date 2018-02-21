@@ -1,5 +1,5 @@
 <?php
-require_once('phpscripts/config.php');
+require_once('../../private/config.php');
 
 $errors = [];
 $username = '';
@@ -54,7 +54,7 @@ if(is_post_request()) {
 
   <?php echo display_errors($errors); ?>
 
-  <form action="admin_login.php" method="post">
+  <form action="login.php" method="post">
     Username:<br />
     <input type="text" name="username" value="<?php echo h($username); ?>" /><br />
     Password:<br />
