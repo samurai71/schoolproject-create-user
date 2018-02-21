@@ -29,6 +29,7 @@ $admin_set = find_all_admins();
         <th>&nbsp;</th>
         <th>&nbsp;</th>
         <th>&nbsp;</th>
+        <th>&nbsp;</th>
       </tr>
 
       <?php while($admin = mysqli_fetch_assoc($admin_set)) { ?>
@@ -40,6 +41,7 @@ $admin_set = find_all_admins();
           <td><?php echo h($admin['username']); ?></td>
           <td><a class="action" href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin['id']))); ?>">View</a></td>
           <td><a class="action" href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin['id']))); ?>">Edit</a></td>
+          <td><a class="action" href="<?php echo url_for('/staff/admins/password.php?id=' . h(u($admin['id']))); ?>">Change Password</a></td>
           <td><a class="action" href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin['id']))); ?>">Delete</a></td>
         </tr>
       <?php } ?>

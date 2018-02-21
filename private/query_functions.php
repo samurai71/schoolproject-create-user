@@ -382,8 +382,8 @@
     if($password_required) {
       if(is_blank($admin['password'])) {
         $errors[] = "Password cannot be blank.";
-      } elseif (!has_length($admin['password'], array('min' => 12))) {
-        $errors[] = "Password must contain 12 or more characters";
+      } elseif (!has_length($admin['password'], array('min' => 6))) {
+        $errors[] = "Password must contain 6 or more characters";
       } elseif (!preg_match('/[A-Z]/', $admin['password'])) {
         $errors[] = "Password must contain at least 1 uppercase letter";
       } elseif (!preg_match('/[a-z]/', $admin['password'])) {
@@ -400,7 +400,7 @@
         $errors[] = "Password and confirm password must match.";
       }
     }
-    
+
     return $errors;
   }
 
