@@ -76,7 +76,7 @@ if(is_post_request()) {
         <dd><input type="password" name="confirm_password" value="" /></dd>
       </dl>
       <p>
-        Passwords should be at least 12 characters and include at least one uppercase letter, lowercase letter, number, and symbol.
+        Passwords should be at least 6 characters and include at least one uppercase letter, lowercase letter, number, and symbol.
       </p>
       <br />
 
