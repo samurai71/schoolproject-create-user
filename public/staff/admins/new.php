@@ -10,8 +10,8 @@ if(is_post_request()) {
   $admin['last_name'] = $_POST['last_name'] ?? '';
   $admin['email'] = $_POST['email'] ?? '';
   $admin['username'] = $_POST['username'] ?? '';
-  $admin['password'] = $_POST['password'] ?? '';
-  $admin['confirm_password'] = $_POST['confirm_password'] ?? '';
+  // $admin['password'] = $_POST['password'] ?? '';
+  // $admin['confirm_password'] = $_POST['confirm_password'] ?? '';
 
   $result = insert_admin($admin);
   if($result === true) {
@@ -29,8 +29,8 @@ if(is_post_request()) {
   $admin["last_name"] = '';
   $admin["email"] = '';
   $admin["username"] = '';
-  $admin['password'] = '';
-  $admin['confirm_password'] = '';
+  // $admin['password'] = '';
+  // $admin['confirm_password'] = '';
 }
 
 ?>
