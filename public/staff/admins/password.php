@@ -45,7 +45,7 @@ if(is_post_request()) {
     <?php echo display_errors($errors); ?>
 
     <form action="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($id))); ?>" method="post">
-    
+
       <dl>
         <dt>Password</dt>
         <dd><input type="password" name="password" value="" /></dd>
@@ -61,7 +61,7 @@ if(is_post_request()) {
       <br />
 
       <div id="operations">
-        <input type="submit" value="Edit Admin" />
+        <input type="submit" value="Edit Password" />
       </div>
     </form>
 
