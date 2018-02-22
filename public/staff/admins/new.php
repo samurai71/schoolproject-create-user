@@ -69,7 +69,7 @@ if(is_post_request()) {
         <dd><input type="text" name="email" value="<?php echo h($admin['email']); ?>" /><br /></dd>
       </dl>
 
-      <dl>
+      <!-- <dl>
         <dt>Password</dt>
         <dd><input type="password" name="password" value="" /></dd>
       </dl>
@@ -80,7 +80,7 @@ if(is_post_request()) {
       </dl>
       <p>
         Passwords should be at least 6 characters and include at least one uppercase letter, lowercase letter, number, and symbol.
-      </p>
+      </p> -->
       <br />
 
       <div id="operations">
