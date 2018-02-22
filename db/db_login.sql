@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 22, 2018 at 04:53 AM
+-- Generation Time: Feb 22, 2018 at 06:15 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -40,9 +40,10 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `first_name`, `last_name`, `email`, `username`, `hashed_password`) VALUES
-(2, 'Mark', 'Landeryou', 'mlanderyou@hotmail.com', 'mlanderyou', '$2y$10$AJF.Q.kOPHSrtBZrpN8D4.GrsuWEyNVRdtBLxYRfohk//yws79Hxq'),
-(3, 'Any', 'One', 'any@email.com', 'username', '$2y$10$cDQOi87ZwvhRElDm2hDHb.7z81IrJp8GUC39hsVDmdjKqzZuLTGnS'),
-(4, 'Justin', 'Brunner', 'any@email.com', 'jbrunner', '$2y$10$QijhNUG0j6wHOD5i6CyOaODzXRaAzea0Xd3ckGukqCdIXbYJedbjS');
+(2, 'Mark', 'Landeryou', 'mlanderyou@hotmail.com', 'mlanderyou', '$2y$10$DBzhrO05fNzcLRXy4lZUJe6XZh0BLrEM8T.WET4Ydrze1B1fn/HUu'),
+(4, 'Justin', 'Brunner', 'any@email.com', 'jbrunner', '$2y$10$x0kbX3l.wz9qOHtnLrsgwuWT7BuM0BaxBiLIDqPCStunfAW0vVArW'),
+(6, 'any', 'one', 'any@email.com', 'anyone71', '$2y$10$AqS2FdD50JfLDc.JhCiIfORA1IpdVVPqnhFnD/s1eaUh3jTezjPxm'),
+(7, 'Joe', 'Smith', 'jsmith@gmail.com', 'jsmith90', '$2y$10$zsTN.bOW2WpKtvb507r8vuDrleW9jPjYeIX6tZUvfTItc.pZnmPuy');
 
 -- --------------------------------------------------------
 
@@ -133,7 +134,7 @@ ALTER TABLE `subjects`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `pages`
 --
