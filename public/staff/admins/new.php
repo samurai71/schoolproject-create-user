@@ -10,8 +10,8 @@ if(is_post_request()) {
   $admin['last_name'] = $_POST['last_name'] ?? '';
   $admin['email'] = $_POST['email'] ?? '';
   $admin['username'] = $_POST['username'] ?? '';
-  // $admin['password'] = $_POST['password'] ?? '';
-  // $admin['confirm_password'] = $_POST['confirm_password'] ?? '';
+  $admin['password'] = $_POST['password'] ?? '';
+  $admin['confirm_password'] = $_POST['confirm_password'] ?? '';
 
   $result = insert_admin($admin);
   if($result === true) {
@@ -29,8 +29,8 @@ if(is_post_request()) {
   $admin["last_name"] = '';
   $admin["email"] = '';
   $admin["username"] = '';
-  // $admin['password'] = '';
-  // $admin['confirm_password'] = '';
+  $admin['password'] = '';
+  $admin['confirm_password'] = '';
 }
 
 ?>
@@ -69,7 +69,7 @@ if(is_post_request()) {
         <dd><input type="text" name="email" value="<?php echo h($admin['email']); ?>" /><br /></dd>
       </dl>
 
-      <!-- <dl>
+      <dl>
         <dt>Password</dt>
         <dd><input type="password" name="password" value="" /></dd>
       </dl>
@@ -80,7 +80,7 @@ if(is_post_request()) {
       </dl>
       <p>
         Passwords should be at least 6 characters and include at least one uppercase letter, lowercase letter, number, and symbol.
-      </p> -->
+      </p>
       <br />
 
       <div id="operations">
