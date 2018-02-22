@@ -49,6 +49,7 @@ if(is_post_request()) {
 <?php $page_title = 'Log in'; ?>
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
 
+<div class="container">
 <div id="content">
   <h1>Log in</h1>
 
@@ -63,5 +64,6 @@ if(is_post_request()) {
   </form>
 
 </div>
+</div><br>
 
 <?php include(SHARED_PATH . '/staff_footer.php'); ?>

@@ -12,6 +12,7 @@ $admin = find_admin_by_id($id);
 <?php $page_title = 'Show Admin'; ?>
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
 
+<div class="container">
 <div id="content">
 
   <a class="back-link" href="<?php echo url_for('/staff/admins/index.php'); ?>">&laquo; Back to List</a>
@@ -21,8 +22,8 @@ $admin = find_admin_by_id($id);
     <h1>Admin: <?php echo h($admin['username']); ?></h1>
 
     <div class="actions">
-      <a class="action" href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin['id']))); ?>">Edit</a>
-      <a class="action" href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin['id']))); ?>">Delete</a>
+      <a class="action btn btn-primary" href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin['id']))); ?>">Edit</a>
+      <a class="action btn btn-primary" href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin['id']))); ?>">Delete</a>
     </div>
 
     <div class="attributes">
@@ -46,4 +47,5 @@ $admin = find_admin_by_id($id);
 
   </div>
 
+</div>
 </div>

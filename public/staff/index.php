@@ -5,6 +5,7 @@
 <?php $page_title = 'Staff Menu'; ?>
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
 
+<div class="container">
 <div id="content">
   <div id="main-menu">
     <h2>Main Menu</h2>
@@ -13,6 +14,7 @@
     </ul>
   </div>
 
+</div>
 </div>
 
 <?php include(SHARED_PATH . '/staff_footer.php'); ?>

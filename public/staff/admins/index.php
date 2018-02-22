@@ -10,16 +10,16 @@ $admin_set = find_all_admins();
 
 <?php $page_title = 'Admins'; ?>
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
-
+<div class="container">
 <div id="content">
   <div class="admins listing">
     <h1>Admins</h1>
 
     <div class="actions">
-      <a class="action" href="<?php echo url_for('/staff/admins/new.php'); ?>">Create New Admin</a>
-    </div>
+      <a class="action btn btn-primary" href="<?php echo url_for('/staff/admins/new.php'); ?>">Create New Admin</a>
+    </div><br>
 
-    <table class="list">
+    <table class="list table">
       <tr>
         <th>ID</th>
         <th>First</th>
@@ -52,6 +52,7 @@ $admin_set = find_all_admins();
     ?>
   </div>
 
+</div>
 </div>
 
 <?php include(SHARED_PATH . '/staff_footer.php'); ?>
